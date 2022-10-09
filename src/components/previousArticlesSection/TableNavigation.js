@@ -31,7 +31,7 @@ export const TableNavigation = () => {
         const pagesArray = []
 
 
-        if (unRoundedPages % 2 === 0) {
+        if (articles.length % 6 === 0) {
             setTotalPage(unRoundedPages)
             for (let i = 0; i < unRoundedPages; i++) {
                 pagesArray[i] = i
@@ -39,6 +39,7 @@ export const TableNavigation = () => {
             setTotalPagesArray(pagesArray)
 
         } else {
+
 
             setTotalPage(totalPagesNumberPlusOne)
 
