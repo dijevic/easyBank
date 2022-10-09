@@ -1,0 +1,10 @@
+
+@use '../variables/variables.scss' as vars ;
+
+.subtitle{
+font-size: 2.5rem;
+line-height: 4rem;
+font-weight:500;
+color:vars.$darkBlue;
+margin-top: 40px;
+}

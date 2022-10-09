@@ -8,6 +8,7 @@ import { articlesContext } from '../../context/articlesContext'
 import styles from '../../scss/previousArticlesSection/previousArticlesSection.module.scss'
 import { TableNavigation } from './TableNavigation'
 import { NoArticles } from '../common/notFoundArticles/NoArticles'
+import { Subtitle } from '../common/Subtitle'
 
 
 export const PreviousArticlesSection = () => {
@@ -19,10 +20,8 @@ export const PreviousArticlesSection = () => {
     return (
         <section className={styles.PreviousArticlesSection}>
             <div className={styles.container}>
-                <h2 className={styles.title}>
 
-                    Previous Articles
-                </h2>
+                <Subtitle text="Previous Articles" />
 
                 <p className={styles.textDescription}>
                     Review and edit previous blog posts published on to the homepage.

@@ -11,6 +11,7 @@ import { Button } from '../common/Button'
 
 // components
 import styles from '../../scss/footer/footer.module.scss'
+import { NavBarItem } from '../common/NavbarItem'
 
 export const Footer = () => {
     return (
@@ -49,52 +50,49 @@ export const Footer = () => {
 
                 <nav className={styles.navigation}>
                     <ul className={styles.ul}>
-                        <li className={styles.li}>
-                            <a
-                                className={styles.link}
-                                href="https://gdfgdfg.com">
-                                About Us
-                            </a>
-                        </li>
-                        <li className={styles.li}>
-                            <a
-                                className={styles.link}
-                                href="https://gdfgdfg.com">
-                                Contact
-                            </a>
-                        </li>
-                        <li className={styles.li}>
-                            <a
-                                className={styles.link}
-                                href="https://gdfgdfg.com">
-                                Blog
-                            </a>
-                        </li>
+                        <NavBarItem
+
+                            styles={styles}
+                            text="Home"
+                            isLink={true}
+
+                        />
+
+
+                        <NavBarItem
+                            href="About"
+                            styles={styles}
+                            text="About"
+
+                        />
+                        <NavBarItem
+                            href="Contact"
+                            styles={styles}
+                            text="Contact"
+
+                        />
 
                     </ul>
 
                     <ul className={`${styles.ul} ${styles.ulRight}`}>
-                        <li className={styles.li}>
-                            <a
-                                className={styles.link}
-                                href="https://gdfgdfg.com">
-                                Careers
-                            </a>
-                        </li>
-                        <li className={styles.li}>
-                            <a
-                                className={styles.link}
-                                href="https://gdfgdfg.com">
-                                Support
-                            </a>
-                        </li>
-                        <li className={styles.li}>
-                            <a
-                                className={styles.link}
-                                href="https://gdfgdfg.com">
-                                Privacy Policy
-                            </a>
-                        </li>
+                        <NavBarItem
+                            href="Blog"
+                            styles={styles}
+                            text="Blog"
+
+                        />
+                        <NavBarItem
+                            href="Careers"
+                            styles={styles}
+                            text="Careers"
+
+                        />
+                        <NavBarItem
+                            href="PrivacyPolicy"
+                            styles={styles}
+                            text="PrivacyPolicy"
+
+                        />
                     </ul>
                 </nav>
 

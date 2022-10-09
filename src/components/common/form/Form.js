@@ -13,6 +13,9 @@ import { articlesContext } from '../../../context/articlesContext'
 
 
 import styles from '../../../scss/createArticle/createArticle.module.scss'
+import { Input } from '../Input';
+import { TextArea } from '../notFoundArticles/TextArea';
+import { InputName } from '../InputName';
 
 
 
@@ -75,55 +78,50 @@ export const Form = () => {
             onSubmit={handleCreateArticle}
             className={styles.form}>
             <div className={styles.inputContainer}>
-                <span className={styles.inputName} >Author</span>
-                <input
-                    className={styles.input}
-                    type="text"
+                <InputName styles={styles} text="Author" />
+
+
+                <Input
                     name="author"
                     value={author}
-                    onChange={handleInputChange}
-                    maxLength="50"
-                    minLength="3"
-                    required={true}
-
+                    handleInputChange={handleInputChange}
+                    styles={styles}
 
                 />
+
             </div>
 
             <div className={styles.inputContainer}>
-                <span className={styles.inputName} >Blog title</span>
 
-                <input
+
+                <InputName styles={styles} text="Blog title" />
+
+                <Input
                     name="title"
                     value={title}
-                    onChange={handleInputChange}
-                    className={styles.input}
-                    type="text"
-                    maxLength="50"
-                    minLength="3"
-                    required={true}
+                    handleInputChange={handleInputChange}
+                    styles={styles}
+
                 />
             </div>
 
             <div className={styles.inputContainer}>
-                <span className={styles.inputName} >Blog content</span>
 
-                <textarea
+                <InputName styles={styles} text="Blog content" />
+                <TextArea
                     name="content"
                     value={content}
-                    onChange={handleInputChange}
-                    className={styles.textArea}
-                    maxLength="50"
-                    minLength="3"
-                    required={true}
+                    handleInputChange={handleInputChange}
+                    styles={styles}
 
 
-                ></textarea>
+                />
+
+
             </div>
             <Button
                 secondGradient={true}
                 text="Save" />
-
 
         </form>
     )

@@ -3,10 +3,10 @@ import React from 'react'
 import styles from '../../scss/common/subtitle.module.scss'
 
 
-export const Subtitle = () => {
+export const Subtitle = ({ text }) => {
     return (
         <h2 className={styles.subtitle}>
-            Why choose Easybank?
+            {text}
         </h2>
     )
 }

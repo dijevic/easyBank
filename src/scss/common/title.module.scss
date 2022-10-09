@@ -1,0 +1,16 @@
+
+@use '../variables/variables.scss' as vars ;
+
+
+.title{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color:vars.$darkBlue;
+    font-weight: 400;
+    margin-top: 25px;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    animation-name:opacity ,scale;
+    animation-iteration-count:initial;
+    animation-duration:.3s;
+}

@@ -10,6 +10,7 @@ import { Card } from './Card'
 
 // styles
 import styles from '../../scss/details section/details.module.scss'
+import { Subtitle } from '../common/Subtitle'
 
 
 export const DetailsSection = () => {
@@ -17,9 +18,9 @@ export const DetailsSection = () => {
         <section className={styles.detailSection} >
 
             <div className={styles.container}>
-                <h2 className={styles.subtitle}>
-                    Why choose Easybank?
-                </h2>
+
+
+                <Subtitle text="Why choose Easybank?" />
 
 
                 <p className={styles.textDescription}>

@@ -9,6 +9,7 @@ import { Button } from '../common/Button'
 import { Link } from 'react-router-dom'
 // styles
 import styles from '../../scss/navBar/navBar.module.scss'
+import { NavBarItem } from '../common/NavbarItem'
 
 
 export const NavBar = () => {
@@ -64,44 +65,43 @@ export const NavBar = () => {
                 <nav className={(isOpen) ? `${styles.nav} ${styles.open}` : `${styles.nav}`}>
 
                     <ul className={styles.ul}>
-                        <li
-                            className={styles.li}
-                        >
+
+                        <NavBarItem
+
+                            styles={styles}
+                            text="Home"
+                            isLink={true}
+
+                        />
+
+
+                        <NavBarItem
+                            href="About"
+                            styles={styles}
+                            text="About"
+
+                        />
+                        <NavBarItem
+                            href="Contact"
+                            styles={styles}
+                            text="Contact"
+
+                        />
+                        <NavBarItem
+                            href="Blog"
+                            styles={styles}
+                            text="Blog"
+
+                        />
+                        <NavBarItem
+                            href="Careers"
+                            styles={styles}
+                            text="Careers"
+
+                        />
 
 
 
-                            <Link to="/" className={styles.link} >
-                                Home
-                            </Link>
-                        </li>
-                        <li
-                            className={styles.li}
-                        >
-                            <a
-                                className={styles.link}
-                                href="#dfgd" >About</a>
-                        </li>
-                        <li
-                            className={styles.li}
-                        >
-                            <a
-                                className={styles.link}
-                                href="#dfgfd" >Contact</a>
-                        </li>
-                        <li
-                            className={styles.li}
-                        >
-                            <a
-                                className={styles.link}
-                                href="#dfgdfgd" >Blog</a>
-                        </li>
-                        <li
-                            className={styles.li}
-                        >
-                            <a
-                                className={styles.link}
-                                href="#dfgd" >Careers</a>
-                        </li>
                         <li
                             className={styles.li}
                         >

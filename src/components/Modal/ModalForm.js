@@ -13,10 +13,14 @@ import { updateArticleService } from '../../services/updatedArticles'
 
 // components
 import { Button } from '../common/Button'
+import { Input } from '../common/Input';
+import { TextArea } from '../common/notFoundArticles/TextArea';
+import { InputName } from '../common/InputName';
 
 
 // styles
 import styles from '../../scss/modal/modal.module.scss'
+
 
 
 export const ModalForm = () => {
@@ -103,50 +107,48 @@ export const ModalForm = () => {
             <h2>Update or delete a blog</h2>
 
             <div className={styles.inputContainer}>
-                <span className={styles.inputName} >Author</span>
-                <input
-                    className={styles.input}
-                    type="text"
+                <InputName styles={styles} text="Author" />
+
+
+                <Input
                     name="author"
                     value={author}
-                    onChange={handleInputChange}
-                    maxLength="50"
-                    minLength="3"
-
-
+                    handleInputChange={handleInputChange}
+                    styles={styles}
 
                 />
+
+
             </div>
 
             <div className={styles.inputContainer}>
-                <span className={styles.inputName} >Blog title</span>
 
-                <input
+                <InputName styles={styles} text="Blog title" />
+
+
+
+                <Input
                     name="title"
                     value={title}
-                    onChange={handleInputChange}
-                    className={styles.input}
-                    type="text"
-                    maxLength="50"
-                    minLength="3"
+                    handleInputChange={handleInputChange}
+                    styles={styles}
 
                 />
+
+
             </div>
 
             <div className={styles.inputContainer}>
-                <span className={styles.inputName} >Blog content</span>
+                <InputName styles={styles} text="Blog content" />
 
-                <textarea
+
+                <TextArea
                     name="content"
                     value={content}
-                    onChange={handleInputChange}
-                    className={styles.textArea}
-                    maxLength="50"
-                    minLength="3"
+                    handleInputChange={handleInputChange}
+                    styles={styles}
 
-
-
-                ></textarea>
+                />
             </div>
             <div className={styles.buttonsContainer}>
 
