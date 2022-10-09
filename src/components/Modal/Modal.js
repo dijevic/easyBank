@@ -1,8 +1,12 @@
 import React from 'react'
 
+// components
+import { ModalForm } from './ModalForm'
+
+// styles
+
 import styles from '../../scss/modal/modal.module.scss'
 
-import { ModalForm } from './ModalForm'
 
 
 export const Modal = () => {

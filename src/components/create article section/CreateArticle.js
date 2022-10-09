@@ -1,8 +1,11 @@
 import React, { useContext } from 'react'
 
+// context
+import { articlesContext } from '../../context/articlesContext'
+
+
 // components
 import { Form } from '../common/form/Form'
-import { articlesContext } from '../../context/articlesContext'
 import { SomethingWentWrong } from '../somethingWentWrong/SomethingWentWrong'
 
 // styles

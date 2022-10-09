@@ -7,10 +7,13 @@ import { articlesContext } from '../../context/articlesContext'
 // hooks
 import { useForm } from '../../hooks/useForm'
 
-// components
+// services
 import { deleteArticleService } from '../../services/deleteArticleService'
 import { updateArticleService } from '../../services/updatedArticles'
+
+// components
 import { Button } from '../common/Button'
+
 
 // styles
 import styles from '../../scss/modal/modal.module.scss'

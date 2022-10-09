@@ -1,5 +1,6 @@
 import React from 'react'
 
+// styles
 import styles from '../../scss/somethingWrong/somethingWrong.module.scss'
 
 

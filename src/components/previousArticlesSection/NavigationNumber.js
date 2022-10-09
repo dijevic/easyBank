@@ -1,6 +1,9 @@
 import React from 'react'
+
+// helper
 import { nextPage } from '../../helpers/nextPage'
 
+// styles
 import styles from '../../scss/previousArticlesSection/previousArticlesSection.module.scss'
 
 

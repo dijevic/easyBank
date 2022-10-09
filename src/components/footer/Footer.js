@@ -1,7 +1,7 @@
 import React from 'react'
-import { LogoWhite } from '../common/icons/LogoWhite'
 
-import styles from '../../scss/footer/footer.module.scss'
+// components
+import { LogoWhite } from '../common/icons/LogoWhite'
 import { FacebookIcon } from '../common/icons/FacebookIcon'
 import { YoutubeIcon } from '../common/icons/YoutubeIcon'
 import { TwitterIcon } from '../common/icons/TwitterIcon'
@@ -9,6 +9,8 @@ import { PinterestIcon } from '../common/icons/PinterestIcon'
 import { InstagramIcon } from '../common/icons/InstagramIcon'
 import { Button } from '../common/Button'
 
+// components
+import styles from '../../scss/footer/footer.module.scss'
 
 export const Footer = () => {
     return (

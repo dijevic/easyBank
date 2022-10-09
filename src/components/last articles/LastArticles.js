@@ -1,12 +1,20 @@
 import React, { useContext, useEffect } from 'react'
+
+// context
+import { articlesContext } from '../../context/articlesContext'
+
+
+// helper
+import { lastFourthArticles } from '../../helpers/LastfourthArticles'
+
+// components
 import { Button } from '../common/Button'
 import { Article } from './Article'
-import { articlesContext } from '../../context/articlesContext'
-import { lastFourthArticles } from '../../helpers/LastfourthArticles'
 import { Link } from 'react-router-dom'
-import styles from '../../scss/last article section/lastArticle.module.scss'
 import { NoArticles } from '../common/notFoundArticles/NoArticles'
 
+// components
+import styles from '../../scss/last article section/lastArticle.module.scss'
 
 export const LastArticles = ({ mainPage }) => {
 

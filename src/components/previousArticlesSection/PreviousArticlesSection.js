@@ -1,9 +1,6 @@
 import React, { useContext } from 'react'
 
-
 // components
-
-
 import { Table } from './Table'
 import { articlesContext } from '../../context/articlesContext'
 

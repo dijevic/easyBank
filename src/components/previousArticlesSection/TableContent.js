@@ -1,5 +1,9 @@
 import React, { useContext } from 'react'
+
+// context
 import { articlesContext } from '../../context/articlesContext'
+
+// styles
 
 import styles from '../../scss/previousArticlesSection/previousArticlesSection.module.scss'
 

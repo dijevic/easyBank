@@ -1,10 +1,14 @@
 import React from 'react'
 
+// components
+
 import { IconApi } from '../common/icons/IconApi'
 import { IconBudgeting } from '../common/icons/IconBudgeting'
 import { IconOnboarding } from '../common/icons/IconOnboarding'
 import { IconOnline } from '../common/icons/IconOnline'
 import { Card } from './Card'
+
+// styles
 import styles from '../../scss/details section/details.module.scss'
 
 

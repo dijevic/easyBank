@@ -1,7 +1,10 @@
 import React from 'react'
 
+// components
 import { Button } from '../common/Button'
 import { Mockup } from './Mockup'
+
+// styles
 import styles from '../../scss/hero section/hero.module.scss'
 
 

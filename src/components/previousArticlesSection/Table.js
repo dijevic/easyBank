@@ -1,7 +1,11 @@
 import React from 'react'
 
-import styles from '../../scss/previousArticlesSection/previousArticlesSection.module.scss'
+// components
 import { TableContent } from './TableContent'
+
+// styles
+import styles from '../../scss/previousArticlesSection/previousArticlesSection.module.scss'
+
 
 export const Table = ({ tableElements }) => {
 

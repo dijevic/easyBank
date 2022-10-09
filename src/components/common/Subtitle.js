@@ -1,4 +1,5 @@
 import React from 'react'
+// styles
 import styles from '../../scss/common/subtitle.module.scss'
 
 

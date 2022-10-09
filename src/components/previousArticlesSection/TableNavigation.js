@@ -1,12 +1,16 @@
 import React, { useContext, useState, useEffect, useRef } from 'react'
+// context
+import { articlesContext } from '../../context/articlesContext'
 
+// components
 import { LetfArrow } from '../common/icons/LetfArrow'
 import { RightArrow } from '../common/icons/RightArrow'
 import { nextPage } from '../../helpers/nextPage'
-
-import { articlesContext } from '../../context/articlesContext'
-import styles from '../../scss/previousArticlesSection/previousArticlesSection.module.scss'
 import { NavigationNumber } from './NavigationNumber'
+
+
+// styles
+import styles from '../../scss/previousArticlesSection/previousArticlesSection.module.scss'
 
 
 export const TableNavigation = () => {

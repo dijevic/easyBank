@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
+
+// components
 import { Bars } from '../common/icons/Bars'
 import { Close } from '../common/icons/Close'
 import { Logo } from '../common/icons/Logo'
 
-import styles from '../../scss/navBar/navBar.module.scss'
 import { Button } from '../common/Button'
 import { Link } from 'react-router-dom'
+// styles
+import styles from '../../scss/navBar/navBar.module.scss'
+
 
 export const NavBar = () => {
 

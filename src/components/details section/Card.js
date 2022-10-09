@@ -1,5 +1,7 @@
 import React from 'react'
 
+// styles
+
 import styles from '../../scss/details section/details.module.scss'
 
 
