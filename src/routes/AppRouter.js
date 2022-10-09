@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify';
+
+// context
 import { articlesContext } from '../context/articlesContext'
+
+// components
 import { CreateArticle } from '../pages/CreateArticle'
 import { MainApp } from '../pages/MainApp'
 import { getArticlesService } from '../services/getArticles'
+
+// styles
+
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export const AppRouter = () => {
@@ -47,7 +56,7 @@ export const AppRouter = () => {
                 <Route path="/createArticle" element={<CreateArticle />} />
 
             </Routes>
-
+            <ToastContainer />
         </articlesContext.Provider>
 
     )

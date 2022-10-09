@@ -1,8 +1,15 @@
 import React, { useContext } from 'react'
-import { Button } from '../Button'
+import { toast } from 'react-toastify';
+// hooks
 import { useForm } from '../../../hooks/useForm'
+
+//components
+
+import { Button } from '../Button'
 import { createArticleService } from '../../../services/postArticleService'
 import { articlesContext } from '../../../context/articlesContext'
+
+// styles
 
 
 import styles from '../../../scss/createArticle/createArticle.module.scss'
@@ -51,7 +58,7 @@ export const Form = () => {
         }
 
 
-        createArticleService(data, setArticles)
+        createArticleService(data, setArticles, toast)
 
         setTimeout(() => {
 

@@ -1,9 +1,12 @@
 import React, { useContext } from 'react'
 
+// components
 import { Form } from '../common/form/Form'
-import styles from '../../scss/createArticle/createArticle.module.scss'
 import { articlesContext } from '../../context/articlesContext'
 import { SomethingWentWrong } from '../somethingWentWrong/SomethingWentWrong'
+
+// styles
+import styles from '../../scss/createArticle/createArticle.module.scss'
 
 
 export const CreateArticleSection = () => {

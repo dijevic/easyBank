@@ -1,11 +1,19 @@
 import React, { useContext, useState } from 'react'
+import { toast } from 'react-toastify';
+
+// context
 import { articlesContext } from '../../context/articlesContext'
+
+// hooks
 import { useForm } from '../../hooks/useForm'
 
-import styles from '../../scss/modal/modal.module.scss'
+// components
 import { deleteArticleService } from '../../services/deleteArticleService'
 import { updateArticleService } from '../../services/updatedArticles'
 import { Button } from '../common/Button'
+
+// styles
+import styles from '../../scss/modal/modal.module.scss'
 
 
 export const ModalForm = () => {
@@ -63,13 +71,13 @@ export const ModalForm = () => {
             return
         }
 
-        await updateArticleService(data, setArticles, id, setTableElements, tableElements)
+        await updateArticleService(data, setArticles, id, setTableElements, toast)
         handleCloseModal()
     }
 
     const handleDelete = async () => {
 
-        await deleteArticleService(setArticles, id, setTableElements, articles)
+        await deleteArticleService(setArticles, id, setTableElements, articles, toast)
         handleCloseModal()
 
 
