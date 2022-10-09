@@ -14,7 +14,7 @@
     .container{
         min-height: 50vh;
         width: inherit;
-        max-width: 700px;
+        max-width: 500px;
         animation-name:opacity;
     animation-iteration-count: initial;
     animation-duration: .5s;
@@ -32,13 +32,14 @@
         
             flex-direction:column;
             .inputContainer{
-                margin-top:30px;
-                margin-bottom:30px;
+                margin-bottom:20px;
                 display:flex;
             flex-direction:column;
                 
         
             .inputName{
+                margin-top:20px;
+
                 margin-bottom:5px;
                 color:vars.$darkBlue;
                 font-size:0.9rem;
@@ -54,7 +55,7 @@
             }
         
             .textArea{
-                height:330px;
+                max-height: 300px;
                 resize:none;
                 border:1px solid vars.$lightGrey2;
                 border-radius:10px;
@@ -77,7 +78,7 @@
             .buttonsContainer{
                 display: flex;
                 justify-content:flex-end;
-                column-gap: 25px;
+                column-gap: 10px;
             }
         }
 
