@@ -63,9 +63,12 @@ export const NavBar = () => {
                         <li
                             className={styles.li}
                         >
-                            <a
-                                className={styles.link}
-                                href="#dfg" >Home</a>
+
+
+
+                            <Link to="/" className={styles.link} >
+                                Home
+                            </Link>
                         </li>
                         <li
                             className={styles.li}
