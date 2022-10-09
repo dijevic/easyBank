@@ -53,11 +53,11 @@ export const Form = () => {
 
         if (author.trim().length <= 3 | content.trim().length <= 3 || title.trim().length <= 3) {
 
-            return
+            return toast.error('The length has to be over 3 characteres')
         }
 
         if (!isNaN(author.trim()) || !isNaN(content.trim()) || !isNaN(title.trim())) {
-            return
+            return toast.error('number are not allowed')
         }
 
 

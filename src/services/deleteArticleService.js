@@ -1,6 +1,8 @@
 import { fetchHelper } from "../helpers/fetch"
 
 export const deleteArticleService = async (setArticles, id, setTableElements, articles, toast) => {
+
+    toast.info('Deleting...')
     try {
 
 
@@ -11,12 +13,13 @@ export const deleteArticleService = async (setArticles, id, setTableElements, ar
         if (data.data) {
             setArticles(prev => prev.filter(item => item.id !== id))
             setTableElements(prev => prev.filter(item => item.id !== id))
+            toast.clearWaitingQueue()
 
-            toast('Article Deleted')
+            toast.success('Article Deleted')
 
 
         } else {
-            toast('something went wrong')
+            toast.error('Something went wrong')
 
         }
 
@@ -25,6 +28,7 @@ export const deleteArticleService = async (setArticles, id, setTableElements, ar
 
     } catch (e) {
         console.log(e)
+
     }
 
 

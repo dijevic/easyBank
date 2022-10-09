@@ -7,7 +7,10 @@ export const createArticleService = async (formData, setArticles, toast) => {
         if (data.data) {
 
             setArticles(prev => [...prev, data.data])
-            toast('Article Created')
+            toast.info('Article Created')
+
+        } else {
+            toast.error('Something went wrong')
 
         }
 

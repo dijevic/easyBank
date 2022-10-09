@@ -102,7 +102,15 @@
                             color:vars.$turquoise2;
                             background: none;
                             cursor: pointer;
-                            font-size: 0.9rem;
+                            font-size: 1rem;
+                            font-weight: 500;
+                            border-bottom:2px solid transparent;
+                            transition: .5s ease all;
+                            padding-bottom:4px;
+                            &:hover{
+                                border-bottom:2px solid vars.$turquoise2;
+
+                            }
                         }
                     }
 
