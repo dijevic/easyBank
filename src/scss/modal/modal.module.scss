@@ -1,0 +1,114 @@
+@use '../variables/variables.scss' as vars ;
+
+.modalContainer{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    min-height:100vh;
+    background:rgba(0,0,0,0.3);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    .container{
+        min-height: 50vh;
+        width: inherit;
+        max-width: 700px;
+        animation-name:opacity;
+    animation-iteration-count: initial;
+    animation-duration: .5s;
+        // padding: 20px 25px;
+
+        .form{
+            display:flex;
+            background:vars.$white;
+            padding:20px 30px;
+            border-radius:30px;
+            box-shadow:2px 5px 7px rgba(0,0,0,0.1);
+            animation-name:openModal;
+            animation-iteration-count: initial;
+            animation-duration: .3s;
+        
+            flex-direction:column;
+            .inputContainer{
+                margin-top:30px;
+                margin-bottom:30px;
+                display:flex;
+            flex-direction:column;
+                
+        
+            .inputName{
+                margin-bottom:5px;
+                color:vars.$darkBlue;
+                font-size:0.9rem;
+                line-height:1.2rem;
+            }
+            .input{
+                padding:15px 20px;
+                border:1px solid vars.$lightGrey2;
+                outline:none;
+                border-radius:5px;
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+            }
+        
+            .textArea{
+                height:330px;
+                resize:none;
+                border:1px solid vars.$lightGrey2;
+                border-radius:10px;
+                padding:20px;
+                outline:none;
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+            }
+        
+            .input , .textArea {
+                transition:0.5s ease all;
+        
+                &:focus{
+                    border:1px solid vars.$turquoise;
+        
+                }
+            }
+            }
+
+            .buttonsContainer{
+                display: flex;
+                justify-content:flex-end;
+                column-gap: 25px;
+            }
+        }
+
+        .close{
+            animation-name:closeModal;
+            animation-iteration-count: initial;
+            animation-duration: .6s;
+        }
+    }
+    
+}
+
+
+
+
+@keyframes openModal {
+
+    0%{transform: scale(0)} ;
+    100%{transform: scale(1)} ;
+}
+@keyframes closeModal {
+
+    0%{transform: scale(1)} ;
+    100%{transform: scale(0)} ;
+}
+
+@keyframes opacity {
+
+    0%{opacity: 0} ;
+    100%{opacity: 1} ;
+}
+
+
+

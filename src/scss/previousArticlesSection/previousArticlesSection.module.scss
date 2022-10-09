@@ -1,0 +1,211 @@
+@use '../variables/variables.scss' as vars ;
+
+.PreviousArticlesSection{
+    margin-top: 40px;
+    min-height: 100vh;
+    .container{
+        margin: 0px auto;
+        max-width: 1200px;
+
+        .title{
+            font-size: 2.5rem;
+            line-height : 3.5rem;
+            margin-bottom: 20px;
+            color:vars.$darkBlue;
+            width: 100%;
+            padding:10px;
+        }
+
+        .textDescription{
+            font-size: 1rem;
+            line-height : 1.3rem;
+            margin-bottom: 20px;
+            color:vars.$lightGrey;
+            width: 100%;
+            padding:10px;
+        }
+
+        .tableContainer{
+            margin-top: 40px;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            overflow-x:scroll;
+
+            .table{
+                border-collapse: collapse;
+                display:block;
+                width: 100%;
+             
+            
+                tr{
+                   
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(5,1fr);
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    justify-items: center;
+
+                    border: 2px solid rgba($color: vars.$black, $alpha: 0.2);
+                    &:nth-child(odd){
+                        background:rgba($color:  vars.$lightGrey2, $alpha: 0.2);
+                        animation-name:opacity ,fadeInLeft;
+                        animation-iteration-count:initial;
+                        animation-duration:.5s;
+                    }
+                    &:nth-child(even){
+                        background: vars.$white;
+                        animation-name:opacity ,fadeInLeft;
+                        animation-iteration-count:initial;
+                        animation-duration:.8s;
+                    }
+
+                
+                    .tableHead{
+                        padding:15px ;
+                        margin-bottom:20px;
+                        font-weight: 400;
+                        color:vars.$darkGrey;
+                        font-size: 1rem;
+                        width: 190px;
+                        margin-right: 40px;
+                        text-align:center;
+                    
+                    }
+
+                .blankHead{
+                        width: 0px;
+                    }
+
+                    .date{
+                        text-align: center;
+                    }
+
+                    .tableD{
+                        
+                        padding:15px ;
+                        margin-bottom:20px;
+                        font-weight: 400;
+                        color:vars.$darkGrey;
+                        font-size: 1rem;
+                        text-align: center;
+                        width: 200px;
+
+
+                        .editButton{
+                            color:vars.$turquoise2;
+                            background: none;
+                            cursor: pointer;
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    .author{
+                        color:vars.$darkBlue;
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+
+        .tableNavigationContainer{
+        
+            padding: 30px 50px ;
+
+            .tableNavigation{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-top: 2px solid rgba($color: vars.$lightGrey, $alpha: 0.3);
+                flex-direction: column;
+
+                .actionBox{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 15px;
+                    column-gap: 2px;
+                   
+                    cursor: pointer;
+
+                    .iconContainer{
+                        display:flex;
+                        align-items: center;
+
+                        svg{
+                            fill:#6B7280;
+                        }
+
+                      
+                    }
+
+                    .paginationNumber , .description{
+
+                        color:#6B7280;
+                        font-size:1.2rem;
+                        line-height: 2rem;
+                    }
+
+                    .paginationNumber{
+                        padding: 20px 10px;
+                        font-size:1.2rem;
+                        line-height: 2rem;
+
+
+
+                    }
+
+
+                    .activedPage{
+
+                        color:vars.$turquoise;
+                        border-top: 3px solid vars.$turquoise;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 968px){
+.PreviousArticlesSection{
+    .container{
+        .tableContainer{
+            overflow: hidden;
+        }
+
+    }
+}
+}
+@media screen and (min-width: 768px){
+    .PreviousArticlesSection{
+        .container{
+           .tableNavigationContainer{
+            .tableNavigation{
+                justify-content: space-between;
+                flex-direction: row;
+            }
+           }
+    
+        }
+    }
+    }
+
+
+    @keyframes opacity {
+
+        0%{opacity:0};
+        100%{opacity:1}
+    }
+    @keyframes fadeInUp {
+    
+        0%{transform:translateY(-10px)};
+        100%{transform:translateY(0)}
+    }
+

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    border: none;
+    font-family: 'Public Sans';
+
+    font-weight:400;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+@media  screen and (min-width:968px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+}
+
+
+
+
+
+
+
+

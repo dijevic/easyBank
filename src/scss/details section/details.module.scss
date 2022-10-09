@@ -1,0 +1,103 @@
+@use '../variables/variables.scss' as vars ;
+
+
+.detailSection{
+    background: vars.$white3;
+    margin-top: 50px;
+    min-height: 100vh;
+}
+
+.container{
+    margin: 0px auto;
+    max-width: 1200px;
+    
+
+
+    padding: 10px;
+
+    .subtitle{
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight:500;
+        color:vars.$darkBlue;
+        margin-top: 40px;
+    }
+
+    .textDescription{
+        margin-top:30px;
+       
+        font-weight: 400;
+        color:vars.$lightGrey;
+        margin-bottom: 20px;
+        line-height: 1rem;
+        font-size: 1rem;
+        max-width:594px
+
+    }
+
+
+    .cardContainer{
+        display: grid;
+        grid-template-columns: repeat(4,minmax(250px, 300px));
+        margin-top: 60px;
+        column-gap: 5px;
+        overflow-x: scroll;
+        padding: 10px;
+    }
+}
+
+.card{
+    padding: 10px;
+.title{
+    font-size:1.3rem;
+    line-height: 1.3rem;
+    color:vars.$darkBlue;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.content{
+
+    color:vars.$lightGrey;
+    font-size:1rem;
+    line-height: 1.5rem;
+    margin-top: 40px;
+    max-width: 250px;
+}
+
+}
+
+@media screen and (min-width: 968px) {
+
+    .detailSection{
+      position:relative;
+      top:-200px
+    }
+    
+    .container{
+    
+        .subtitle{
+            margin-top: 100px;
+            margin-bottom:40px;
+        }
+    
+    
+    
+    
+        .cardContainer{
+            
+            overflow-x: visible;
+            margin-top:90px;
+        grid-template-columns: repeat(4,minmax(200px, 300px));
+
+           
+        }
+    }
+    
+    .card{
+        padding: 0px;
+  
+    
+    } 
+    
+}

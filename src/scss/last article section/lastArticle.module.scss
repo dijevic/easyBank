@@ -1,0 +1,131 @@
+@use '../variables/variables.scss' as vars ;
+
+.lastArticleSection{
+    margin-top: 30px;
+    background:vars.$white2;
+    min-height: 100vh;
+    padding: 10px;
+
+    .container{
+        margin: 0px auto;
+        max-width: 1200px;
+
+        .subtitle{
+            font-size: 2rem;
+        line-height: 4rem;
+        font-weight:500;
+        color:vars.$darkBlue;
+        margin-top: 40px;
+        }
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+        margin-top: 40px;
+
+            }
+        }
+
+        .articlesContainer{
+            display: grid;
+            grid-template-columns: repeat(4,minmax(250px, 300px));
+            margin-top: 60px;
+            column-gap: 20px;
+            overflow-x: scroll;
+            padding: 10px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-bottom: 50px;
+         
+            img{
+                width: 100%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .articleCard{
+                
+                background: vars.$white;
+                box-shadow: 3px 3px 7px rgba(0,0,0,0.1);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            padding-bottom: 20px;
+            animation-name:opacity ,fadeInUp;
+            animation-iteration-count:initial;
+            animation-duration:.5s;
+
+            .textContainer{
+
+                padding: 30px;
+
+                .title{
+                    margin-bottom: 20px;
+                    color:vars.$darkBlue;
+                    font-size: 1rem;
+                    line-height: 1.2rem;
+                    transition: .5s ease all;
+                    cursor: pointer;
+                    &:hover{
+                        color:vars.$turquoise
+                    }
+                }
+
+                
+                .author , .articleContent {
+                    font-size: 0.7rem;
+                    line-height: 0.7rem;
+                    color:vars.$lightGrey;
+                    display: block;
+                    margin-bottom: 20px;
+                    font-weight: 400;
+                }
+
+                .articleContent{
+                    font-size: 0.9rem;
+
+                }
+            }
+
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width:968px){
+    .lastArticleSection{
+        .container{
+            .articlesContainer{
+                overflow-x:visible;
+                grid-template-columns: repeat(4,minmax(200px, 300px));
+
+            
+
+            }
+        
+        }
+     
+    }
+
+    .negativeMarginTop{
+        margin-top: -150px;
+
+    }
+
+   
+
+   
+}
+
+@keyframes opacity {
+
+    0%{opacity:0};
+    100%{opacity:1}
+}
+@keyframes fadeInUp {
+
+    0%{transform:translateY(-10px)};
+    100%{transform:translateY(0)}
+}

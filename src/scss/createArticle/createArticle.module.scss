@@ -1,0 +1,104 @@
+@use '../variables/variables.scss' as vars ;
+
+
+.createArticleSection{
+    margin-top:30px;
+    background:vars.$white2;
+
+    .container{
+        margin:0px auto;
+        max-width: 1200px;
+        padding: 10px;
+
+        .title{
+            font-size: 2.5rem;
+            line-height : 3.5rem;
+            margin-bottom: 20px;
+            color:vars.$darkBlue;
+        }
+
+        .textDescription{
+            font-size: 1rem;
+            line-height : 1.3rem;
+            margin-bottom: 20px;
+            color:vars.$lightGrey;
+        }
+
+        .formContainer{
+
+            margin:60px auto;
+            max-width:600px;
+
+            .form{
+                display:flex;
+                background:vars.$white;
+                padding:20px 30px;
+                border-radius:30px;
+                box-shadow:2px 5px 7px rgba(0,0,0,0.1);
+
+                flex-direction:column;
+                .inputContainer{
+                    margin-top:30px;
+                    margin-bottom:30px;
+                    display:flex;
+                flex-direction:column;
+                    
+
+                .inputName{
+                    margin-bottom:5px;
+                    color:vars.$darkBlue;
+                    font-size:1.1rem;
+                    line-height:1.2rem;
+                }
+                .input{
+                    padding:15px 20px;
+                    border:2px solid vars.$lightGrey2;
+                    outline:none;
+                    border-radius:5px;
+                    font-size:1rem;
+                    line-height:1.2rem;
+                }
+
+                .textArea{
+                    height:330px;
+                    resize:none;
+                    border:2px solid vars.$lightGrey2;
+                    border-radius:10px;
+                    padding:20px;
+                    outline:none;
+                    font-size:1rem;
+                    line-height:1.2rem;
+                }
+
+                .input , .textArea {
+                    transition:0.5s ease all;
+                    font-size:1rem;
+                    line-height:1.2rem;
+                    &:focus{
+                        border:2px solid vars.$turquoise;
+
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width:968px){
+
+    .createArticleSection{
+        margin-top:80px;
+        .container{
+            .title{
+            margin-top: 100px;
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,150 @@
+@use '../variables/variables.scss' as vars ;
+
+.heroSection {
+    margin-top: 20px;
+    padding: 20px;
+    background:vars.$white2;
+    min-height: 100vh;
+    display: flex;
+
+  
+
+  .container{
+    max-width:1200px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content:center;
+}
+
+
+
+}
+
+
+.title{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color:vars.$darkBlue;
+    font-weight: 400;
+    margin-top: 25px;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    animation-name:opacity ,scale;
+    animation-iteration-count:initial;
+    animation-duration:.3s;
+}
+
+.textDescription{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: vars.$lightGrey;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 446px;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    animation-name:opacity ,scale;
+    animation-iteration-count:initial;
+    animation-duration:.5s;
+}
+
+
+ .wrapperMockup{
+    display: none;
+}
+
+
+@media screen and (min-width: 968px){
+
+    .heroSection {
+        margin-top: 60px;
+        padding: 40px;
+        position: relative;
+        padding-right: 0px;
+       
+    
+        .container{
+            margin-top:80px;
+            flex-direction: row;
+            max-width: 100%;
+            justify-content:space-between;
+
+            .wrapper{
+                min-width:30%
+            }
+
+            .wrapperMockup{
+                position: relative;
+                top: -115px;
+                right:0px;
+                display: flex;
+            }
+
+            .mockupContainer{
+                position: relative;
+                min-width: 0%;
+                
+
+               
+                
+
+                .mockup{
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    z-index:10;
+                }
+            }
+        }
+  
+    
+    }
+
+   
+    
+    
+    .title{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin-top: 40px;
+        max-width: 400px;
+    }
+
+    .textDescription{
+       
+        margin-top: 60px;
+    }
+    
+
+}
+
+@media screen and (min-width: 1240px) {
+
+    .heroSection{
+        padding-left:5%
+    }
+}
+@media screen and (min-width: 1440px) {
+
+    .heroSection{
+        padding-left:13%
+    }
+}
+
+
+
+@keyframes opacity {
+    0%{opacity:0};
+    100%{opacity:1}
+    
+}
+@keyframes scale {
+    0%{transform:scale(0)};
+    100%{transform:scale(1)};
+    
+}

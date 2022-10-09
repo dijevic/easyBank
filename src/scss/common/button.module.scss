@@ -1,0 +1,50 @@
+@use '../variables/variables.scss' as vars ;
+
+
+.button{
+    background: vars.$mainGradient;
+    border-radius: 89px;
+    color:vars.$white;
+    padding: 10px 15px;
+    font-family: 'Public Sans';
+    font-weight:400;
+    font-size: 1rem;
+    transition: 0.3s ease;
+
+
+    
+    
+}
+
+.gradient2{
+    background: vars.$gradient2;
+
+}
+
+@media screen and (min-width: 968px) {
+
+    .button{
+      
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        transition: 0.5s ease all;
+
+        &:hover{
+            background: linear-gradient(90deg, #84E1A7 4.85%, #81D6DB 100%);
+        transition: 0.5s ease all;
+
+            cursor: pointer;
+        }
+       
+     }
+
+     .gradient2{
+        position:static;
+        transition: 0.5s ease all;
+
+     }
+
+
+
+}
