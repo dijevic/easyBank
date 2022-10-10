@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { DetailsSection } from '../components/details section/DetailsSection'
 import { Footer } from '../components/footer/Footer'
 import { HeroSection } from '../components/hero section/HeroSection'
@@ -10,6 +10,12 @@ import { articlesContext } from '../context/articlesContext'
 export const MainApp = () => {
 
     const { openModal } = useContext(articlesContext)
+
+    useEffect(() => {
+
+        window.scrollTo(0, 0)
+
+    }, [])
 
     return (
 

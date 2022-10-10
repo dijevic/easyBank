@@ -135,6 +135,7 @@
                 justify-content: center;
                 border-top: 2px solid rgba($color: vars.$lightGrey, $alpha: 0.3);
                 flex-direction: column;
+                row-gap:10px;
 
                 .actionBox{
                     display: flex;

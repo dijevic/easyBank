@@ -13,6 +13,7 @@ import { getArticlesService } from '../services/getArticles'
 // styles
 
 import 'react-toastify/dist/ReactToastify.css';
+import { Loader } from '../components/loader/Loader';
 
 
 export const AppRouter = () => {
@@ -33,7 +34,7 @@ export const AppRouter = () => {
     }, [])
 
     if (loading) {
-        return (<h2>Loading</h2>)
+        return (<Loader />)
     }
 
     return (
