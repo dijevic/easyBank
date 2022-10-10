@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 
 // context
 import { articlesContext } from '../../context/articlesContext'
@@ -17,11 +17,17 @@ export const CreateArticleSection = () => {
 
     const { articles } = useContext(articlesContext)
 
+    useEffect(() => {
 
+        window.scrollTo(0, 0)
+
+    }, [])
 
 
     return (
-        <section className={styles.createArticleSection}>
+        <section
+
+            className={styles.createArticleSection}>
             <div className={styles.container}>
 
                 <Subtitle text="Add New Blog Article" />

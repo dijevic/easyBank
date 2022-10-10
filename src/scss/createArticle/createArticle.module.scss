@@ -15,6 +15,10 @@
             line-height : 3.5rem;
             margin-bottom: 20px;
             color:vars.$darkBlue;
+            display:block;
+            animation-name:opacity ,scale;
+            animation-iteration-count:initial;
+            animation-duration:.5s;
         }
 
         .textDescription{
@@ -22,6 +26,9 @@
             line-height : 1.3rem;
             margin-bottom: 20px;
             color:vars.$lightGrey;
+            animation-name:opacity ,scale;
+            animation-iteration-count:initial;
+            animation-duration:.8s;
         }
 
         .formContainer{
@@ -35,6 +42,9 @@
                 padding:20px 30px;
                 border-radius:30px;
                 box-shadow:2px 5px 7px rgba(0,0,0,0.1);
+                animation-name:opacity ,scale;
+            animation-iteration-count:initial;
+            animation-duration:.5s;
 
                 flex-direction:column;
                 .inputContainer{
@@ -101,4 +111,15 @@
         }
     }
 
+}
+
+@keyframes opacity {
+    0%{opacity:0};
+    100%{opacity:1}
+    
+}
+@keyframes scale {
+    0%{transform:scale(0)};
+    100%{transform:scale(1)};
+    
 }
