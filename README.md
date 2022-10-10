@@ -7,7 +7,7 @@
   
  
 
-<p margin="20px">For this  project I worked with (<b>react-context API</b>) , React Router v6 (<b>Routing</b>) , <b>Sass</b> and <b>css module</b> , <b>toast</b> for notifications  and oveall  love </p>
+<p margin="20px">For this  project I worked with (<b>react-context API</b>) , React Router v6 (<b>Routing</b>) , <b>Sass</b> and <b>css module</b> , <b>toast</b> for notifications  and overall  love </p>
 
 
 
