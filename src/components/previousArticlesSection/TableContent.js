@@ -17,7 +17,7 @@ export const TableContent = ({ author, title, date, content, id }) => {
 
         setOpenModal(true)
 
-        setActiveBlog({ author, title, date, content, id })
+        setActiveBlog({ activedAuthor: author, activedContent: content, date, activedTitle: title, id })
     }
 
     return (

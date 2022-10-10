@@ -1,6 +1,6 @@
 import { fetchHelper } from "../helpers/fetch"
 
-export const deleteArticleService = async (setArticles, id, setTableElements, articles, toast) => {
+export const deleteArticleService = async (setArticles, id, setTableElements, toast) => {
 
     toast.info('Deleting...')
     try {

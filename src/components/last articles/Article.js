@@ -16,7 +16,9 @@ export const Article = ({ author, content, image_url, title, id, date }) => {
 
         setOpenModal(true)
 
-        setActiveBlog({ author, title, date, content, id })
+
+        setActiveBlog({ activedAuthor: author, activedContent: content, date, activedTitle: title, id })
+
     }
 
     return (

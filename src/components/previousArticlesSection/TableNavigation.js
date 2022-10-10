@@ -53,9 +53,6 @@ export const TableNavigation = () => {
             setTotalPagesArray(pagesArray)
 
 
-
-
-
         }
 
 

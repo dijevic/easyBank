@@ -3,7 +3,7 @@ export const pickSixElements = (articles = [], setTableElements) => {
     const tableArticles = []
 
 
-    if (articles.length <= 4) {
+    if (articles.length <= 6) {
 
         for (let i = 0; i < articles.length; i++) {
             tableArticles.push(articles[i])

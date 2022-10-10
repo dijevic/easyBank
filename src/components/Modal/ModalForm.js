@@ -25,9 +25,9 @@ import styles from '../../scss/modal/modal.module.scss'
 
 export const ModalForm = () => {
 
-    const { setOpenModal, activeBlog, setArticles, articles, setTableElements } = useContext(articlesContext)
+    const { setOpenModal, activeBlog, setArticles, setTableElements } = useContext(articlesContext)
 
-    const { author: activedAuthor, content: activedContent, title: activedTitle, id } = activeBlog
+    const { activedAuthor, activedContent, activedTitle, id } = activeBlog
     const [isClosing, setIsClosing] = useState(false)
 
 
@@ -87,7 +87,7 @@ export const ModalForm = () => {
 
     const handleDelete = async () => {
 
-        await deleteArticleService(setArticles, id, setTableElements, articles, toast)
+        await deleteArticleService(setArticles, id, setTableElements, toast)
         handleCloseModal()
 
 
